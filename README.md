@@ -1,2 +1,2 @@
 # Result-memory-project-
-this is a result memory componnet project 
+This is a result memory componnet project 
