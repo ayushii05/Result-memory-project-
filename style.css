@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+     
+  }
+
+  body{
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  
+  body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 600px;
+    display: flex;
+    box-shadow: 8px 8px 10px hsl(221, 100%, 96%);
+    border-radius: 20px;
+  }
+  
+  .left-container,
+  .right-container {
+    width: 50%;
+  }
+  
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+  
+  .left-container h2 {
+    color: hsla(222, 100%, 96%, 0.7);
+    font-size: 1.2rem;
+  }
+  
+  .left-container .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  }
+  
+  .circle h3 {
+    font-size: 3.4rem;
+    color: white;
+  }
+  
+  .circle span {
+    color: hsla(222, 100%, 96%, 0.7);
+  }
+  
+  h3.great {
+    font-size: 1.7em;
+    color: white;
+  }
+  
+  .left-container p {
+    color: hsla(222, 100%, 96%, 0.7);
+    font-size: 17px;
+  }
+  
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .summary-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: hsla(241, 100%, 89%, 0.2);
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+  
+  .summary-component .left-component {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .left-component.reaction p {
+    color: hsl(0, 100%, 67%);
+  }
+  
+  .left-component.memory p {
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .left-component.verbal p {
+    color: hsl(166, 100%, 37%);
+  }
+  
+  .left-component.visual p {
+    color: hsl(234, 85%, 45%);
+  }
+  
+  .right-component span.bold {
+    color: black;
+  }
+  
+  .right-component span {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.733);
+  }
+  
+  button {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 900px) {
+    button:hover {
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+  }
+  
+  @media screen and (max-width: 630px) {
+    body {
+      display: block;
+    }
+    .container {
+      width: 300px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+  
+    .left-container,
+    .right-container {
+      width: 100%;
+    }
+  
+    .left-container {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
